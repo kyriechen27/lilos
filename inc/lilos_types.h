@@ -34,24 +34,10 @@ typedef unsigned char lilos_u8;
 typedef signed char lilos_s8;
 typedef char lilos_bool;
 
-enum lilos_bool_e { LILOS_FALSE, LILOS_TRUE };
-
-enum lilos_errcode_e {
-  LILOS_OK,
-  LILOS_ERR_FAILED = -1,
-  LILOS_ERR_TIMEOUT = -2,
-  LILOS_ERR_MEMORY_OVERFLOW = -3,
-  LILOS_ERR_BUSY = -4,
-  LILOS_ERR_OVER_MAX = -5,
-  LILOS_ERR_NO_MATCH = -6,
-  LILOS_ERR_NUMBER = -7
+enum lilos_bool_e {
+  LILOS_FALSE = 0,
+  LILOS_TRUE,
 };
-
-typedef int (*lilos_wfile)(void *, int, const char *);
-typedef int (*lilos_rfile)(void *, int, const char *);
-typedef int (*lilos_get_id)(uint8_t *, int *);
-typedef int (*lilos_send_messages)(void *, int);
-typedef unsigned long long (*lilos_get_time)(void);
 
 #ifdef __cplusplus
 }

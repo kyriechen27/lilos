@@ -15,11 +15,7 @@ extern "C" {
 #endif
 
 #ifndef LILOS_MAX_QUEUE_NUM
-#define LILOS_MAX_QUEUE_NUM 10
-#endif
-
-#ifndef LILOS_MAX_QUEUE_MASSGAE_NUM
-#define LILOS_MAX_QUEUE_MASSGAE_NUM 128
+#define LILOS_MAX_QUEUE_NUM 32
 #endif
 
 typedef enum {
