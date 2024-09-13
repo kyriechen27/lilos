@@ -18,10 +18,9 @@ extern void lilos_swTIMER_Handler(void);
 extern void lilos_CallBack_Handler(void);
 extern void lilos_TASK_Handler(void);
 
+#ifndef LILOS_NO_INIT_CALL
 extern initcall_t __initcall_start[];
 extern initcall_t __initcall_end[];
-
-#ifndef LILOS_NO_INIT_CALL
 void lilos_init_call(void) {
   initcall_t *fn_entry;
 

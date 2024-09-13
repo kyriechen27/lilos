@@ -20,7 +20,7 @@
 #define LILOS_LOWPOWER_OFF 1
 #define LILOS_LOWPOER_MODE LILOS_LOWPOWER_OFF
 
-//#define LILOS_NO_INIT_CALL
-//#define BUILD_DEBUG
+// #define LILOS_NO_INIT_CALL
+// #define BUILD_DEBUG
 
 #endif

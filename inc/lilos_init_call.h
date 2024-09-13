@@ -8,6 +8,9 @@
 #ifndef __LILOS_INIT_CALL_H__
 #define __LILOS_INIT_CALL_H__
 
+#include "lilos_config.h"
+
+#ifndef LILOS_NO_INIT_CALL
 typedef void (*initcall_t)(void);
 
 #define __define_initcall(fn, id)                                   \
@@ -17,5 +20,6 @@ typedef void (*initcall_t)(void);
 #define sys_initcall(fn) __define_initcall(fn, 0)
 #define device_initcall(fn) __define_initcall(fn, 1)
 #define app_initcall(fn) __define_initcall(fn, 2)
+#endif
 
 #endif
